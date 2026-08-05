@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agenda Belajar Kelas VII - Program Layanan BK</title>
+<title>Agenda Belajar VII_Putri - Program Layanan BK</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); color: #1f2937; line-height: 1.6; padding: 20px; }
@@ -92,6 +92,7 @@ footer strong { color:white }
 .ttd-final-box .img-ttd{min-height:70px;display:flex;align-items:center;justify-content:center;margin-bottom:5px}
 .ttd-final-box .img-ttd img{max-height:80px;max-width:200px}
 .ttd-final-box .nama{font-weight:bold;text-decoration:underline}
+.ttd-final-box .nip{font-size:10pt}
 .empty-state { text-align:center !important; color:#64748b !important; padding:25px !important; }
 .empty-state .icon { font-size:2em; display:block; margin-bottom:8px }
 td.keterangan-cell { min-width:210px; }
@@ -182,15 +183,15 @@ footer p { font-size:0.7em }
 </div>
 </div>
 
-<div class="judul-dokumen"><h3>AGENDA BELAJAR KELAS VII</h3></div>
+<div class="judul-dokumen"><h3>AGENDA BELAJAR VII_PUTRI</h3></div>
 
 <div class="info-banner">
 💡 <strong>Petunjuk:</strong>
 <br>• Semua cell bisa diedit langsung, termasuk <strong>Kelas</strong> dan <strong>Hari, Tanggal</strong>.
 <br>• Kolom <strong>Keterangan</strong>: teks + referensi link (<strong>🔗 URL</strong>) + bukti foto (<strong>📷 Foto</strong>).
-<br>• <strong>Foto otomatis di-upload ke folder Drive “Keterangan Agenda BK Kelas VII”</strong> dan <strong>link-nya terekap di Spreadsheet</strong>, sehingga <strong>pasti muncul di laporan PDF</strong>.
+<br>• <strong>Foto otomatis di-upload ke folder Drive “Keterangan VII_Putri”</strong> dan <strong>link-nya terekap di Spreadsheet</strong>, sehingga <strong>pasti muncul di laporan PDF</strong>.
 <br>• Gunakan <strong>➕</strong> di kolom Aksi untuk menambah baris dalam No. yang sama.
-<br>• <strong>Siklus periode:</strong> isi <strong>D1</strong> → <em>Kirim</em> → PDF berisi <strong>D1</strong>. Klik <strong>🔢 Tambah No. Baru</strong> (atau 🔄 Reset) → isi <strong>D2</strong> → <em>Kirim</em> → <strong>D1 diduplikasi ke Sheet Riwayat</strong>, PDF berisi <strong>D1+D2</strong>. Seterusnya: <strong>D3 → PDF D1+D2+D3</strong>, <strong>D4 → PDF D1+D2+D3+D4</strong>, dst.
+<br>• <strong>Siklus periode:</strong> isi <strong>D1</strong> → <em>Kirim</em> → PDF berisi <strong>D1</strong>. Klik <strong>🔢 Tambah No. Baru</strong> (atau 🔄 Reset) → isi <strong>D2</strong> → <em>Kirim</em> → <strong>D1 diduplikasi ke Sheet Riwayat</strong>, PDF berisi <strong>D1+D2</strong>. Seterusnya: <strong>D3 → PDF D1+D2+D3</strong>, dst.
 <br>• <strong>Menghapus data di dashboard TIDAK menghapus data di Sheet Aktif</strong> — Sheet bersifat <em>append-only</em> dan PDF selalu membaca seluruh Sheet Aktif.
 <br>• Klik <strong>📄 Generate &amp; Upload Laporan PDF</strong> untuk membuat PDF dari seluruh data aktif.
 </div>
@@ -212,9 +213,9 @@ footer p { font-size:0.7em }
 </div>
 
 <div class="info-banner integrasi-banner">
-🔌 <strong>INTEGRASI GOOGLE — Spreadsheet &amp; Drive</strong>
+🔌 <strong>INTEGRASI GOOGLE — Spreadsheet &amp; Drive (VII_Putri)</strong>
 <div class="integrasi-baris">
-<input type="text" id="backendUrl" placeholder="  ">
+<input type="text" id="backendUrl" placeholder="https://script.google.com/macros/s/AKfycbyrVyAuqGQ9QWW6g7ws53rJsQAy6D0wF4Rc2WGJSVk3AYOAaFaiiM23YxTyWFA14PBG/exec">
 <button class="btn btn-simpan" onclick="simpanBackendUrl()">💾 Simpan URL</button>
 <button class="btn btn-tes" onclick="tesKoneksi()">📡 Tes Koneksi</button>
 </div>
@@ -227,9 +228,9 @@ footer p { font-size:0.7em }
 </div>
 
 <section>
-<h2>📗 Agenda Layanan Kelas 7</h2>
+<h2>📗 Agenda Layanan VII_Putri</h2>
 <div class="kelas-header">
-<h3>🟪 Kelas 7 — Fase D Awal</h3>
+<h3>🟪 VII_Putri — Fase D Awal</h3>
 <span>Fokus: Adaptasi &amp; Fondasi</span>
 </div>
 <div class="table-actions">
@@ -242,7 +243,7 @@ footer p { font-size:0.7em }
 <button class="btn btn-ekspor" onclick="eksporCSV()">⬇️ Ekspor CSV</button>
 </div>
 <div class="table-wrapper">
-<table id="tabel-kelas7">
+<table id="tabel-VII_Putri">
 <thead>
 <tr>
 <th>No</th>
@@ -257,7 +258,7 @@ footer p { font-size:0.7em }
 <th class="col-aksi">Aksi</th>
 </tr>
 </thead>
-<tbody id="tbody-kelas7"></tbody>
+<tbody id="tbody-VII_Putri"></tbody>
 </table>
 </div>
 </section>
@@ -310,7 +311,7 @@ footer p { font-size:0.7em }
 </div>
 
 <footer>
-<p>📘 <strong>Agenda Belajar Kelas VII — Program Layanan BK SMP</strong></p>
+<p>📘 <strong>Agenda Belajar VII_Putri — Program Layanan BK SMP</strong></p>
 <p style="margin-top:6px; font-size:0.85em;">© 2026 — Data tersimpan otomatis di browser &amp; Google Spreadsheet (append-only).</p>
 </footer>
 </div>
@@ -319,12 +320,12 @@ footer p { font-size:0.7em }
 <button class="print-btn" onclick="window.print()">🖨️ Cetak / Simpan PDF</button>
 
 <script>
-const STORAGE_KEY = 'agendaBK_kelas7';
-const BACKEND_KEY = 'agendaBK_backendUrl_kelas7';
-const HEADER_STORAGE_KEY = 'agendaBK_headerData_kelas7';
-const TTD_INFO_STORAGE_KEY = 'agendaBK_ttdInfoData_kelas7';
-const PERIODE_KEY = 'agendaBK_periodeBaru_kelas7';
-const GRUP_TERKIRIM_KEY = 'agendaBK_grupTerkirim_kelas7'; // ===== ATURAN DELTA: jumlah grup dashboard yang sudah masuk Sheet pada siklus berjalan =====
+const STORAGE_KEY = 'agendaBK_VII_Putri';
+const BACKEND_KEY = 'agendaBK_backendUrl_VII_Putri';
+const HEADER_STORAGE_KEY = 'agendaBK_headerData_VII_Putri';
+const TTD_INFO_STORAGE_KEY = 'agendaBK_ttdInfoData_VII_Putri';
+const PERIODE_KEY = 'agendaBK_periodeBaru_VII_Putri';
+const GRUP_TERKIRIM_KEY = 'agendaBK_grupTerkirim_VII_Putri'; // jumlah grup dashboard yang sudah masuk Sheet pada siklus berjalan
 
 const DEFAULT_BACKEND_URL = '';
 
@@ -486,7 +487,7 @@ async function tesKoneksi() {
     const res = await fetch(url);
     const info = await res.json();
     if (info.status === 'online') {
-      tampilkanNotif('✅ Terhubung ke backend!', 'success');
+      tampilkanNotif('✅ Terhubung ke backend VII_Putri!', 'success');
       setBackendStatus('✅ Terhubung.', '#059669');
     } else {
       setBackendStatus('❌ Respons tidak dikenal', '#b91c1c');
@@ -525,17 +526,16 @@ async function pastikanSemuaFotoTerupload() {
   if (adaUpload) {
     simpanLocal(true);
     renderTabel();
-    tampilkanNotif('📷 Foto keterangan ter-upload ke folder Drive', 'success');
+    tampilkanNotif('📷 Foto keterangan ter-upload ke folder Drive VII_Putri', 'success');
   }
   return adaUpload;
 }
 
 /* ================================================================
-   KIRIM KE SPREADSHEET
-   - periodeBaru = true  -> hanya DELTA (grup baru / Dn) yang dikirim,
-     backend menduplikasi batch terakhir ke Riwayat lalu append Dn.
-   - periodeBaru = false -> kirim semua; backend append-only (hanya
-     menambah bila baris lebih banyak dari Sheet).
+   KIRIM KE SPREADSHEET (VII_Putri)
+   - periodeBaru = true  -> hanya DELTA (Dn) yang dikirim; backend
+     menduplikasi batch terakhir ke Riwayat lalu append Dn.
+   - periodeBaru = false -> kirim semua; backend append-only.
    ================================================================ */
 async function kirimKeSpreadsheet(senyap) {
   try {
@@ -551,18 +551,16 @@ async function kirimKeSpreadsheet(senyap) {
     var periodeBaru = false;
     try { periodeBaru = localStorage.getItem(PERIODE_KEY) === '1'; } catch (e) { periodeBaru = false; }
 
-    // ===== ATURAN DELTA: saat periode baru, kirim hanya data baru (Dn) =====
     var dataKirim = dataTabel;
     if (periodeBaru) {
       var mulai = Math.min(getGrupTerkirim(), dataTabel.length);
       dataKirim = dataTabel.slice(mulai);
       if (dataKirim.length === 0) {
         if (!senyap) tampilkanNotif('ℹ️ Belum ada isian baru untuk periode ini', 'info');
-        return true; // PERIODE_KEY dipertahankan sampai ada data baru
+        return true;
       }
     }
 
-    // ===== ATURAN FOTO: semua foto harus sudah berupa link Drive =====
     if (!senyap) tampilkanNotif('📷 Memeriksa foto keterangan...', 'info');
     await pastikanSemuaFotoTerupload();
 
@@ -599,7 +597,6 @@ async function kirimKeSpreadsheet(senyap) {
       if (periodeBaru) {
         try { localStorage.removeItem(PERIODE_KEY); } catch (e) {}
       }
-      // Setelah kirim sukses, seluruh grup dashboard dianggap sudah masuk Sheet
       setGrupTerkirim(dataTabel.length);
 
       if (!senyap) tampilkanNotif('📊 Data terkirim ke Spreadsheet (' + res.totalBaris + ' baris aktif)', 'success');
@@ -684,14 +681,14 @@ function uploadLogo(sisi, inp) {
           if (sisi === 'kiri') {
             logoKiriUrl = res.url;
             try {
-              localStorage.setItem('agendaBK_logoKiriUrl_kelas7', res.url);
-              localStorage.setItem('agendaBK_logoKiriB64_kelas7', b);
+              localStorage.setItem('agendaBK_logoKiriUrl_VII_Putri', res.url);
+              localStorage.setItem('agendaBK_logoKiriB64_VII_Putri', b);
             } catch (e) {}
           } else {
             logoKananUrl = res.url;
             try {
-              localStorage.setItem('agendaBK_logoKananUrl_kelas7', res.url);
-              localStorage.setItem('agendaBK_logoKananB64_kelas7', b);
+              localStorage.setItem('agendaBK_logoKananUrl_VII_Putri', res.url);
+              localStorage.setItem('agendaBK_logoKananB64_VII_Putri', b);
             } catch (e) {}
           }
           tampilkanNotif('🖼️ Logo ' + (sisi === 'kiri' ? 'Kiri' : 'Kanan') + ' ter-upload ke Drive', 'success');
@@ -732,10 +729,10 @@ function hapusLogo() {
   if (!confirm('Hapus semua logo dari dashboard? (File di Drive tidak ikut terhapus)')) return;
   logoKiriBase64 = ''; logoKananBase64 = ''; logoKiriUrl = ''; logoKananUrl = '';
   try {
-    localStorage.removeItem('agendaBK_logoKiriUrl_kelas7');
-    localStorage.removeItem('agendaBK_logoKiriB64_kelas7');
-    localStorage.removeItem('agendaBK_logoKananUrl_kelas7');
-    localStorage.removeItem('agendaBK_logoKananB64_kelas7');
+    localStorage.removeItem('agendaBK_logoKiriUrl_VII_Putri');
+    localStorage.removeItem('agendaBK_logoKiriB64_VII_Putri');
+    localStorage.removeItem('agendaBK_logoKananUrl_VII_Putri');
+    localStorage.removeItem('agendaBK_logoKananB64_VII_Putri');
   } catch (e) {}
   ['logoKiriImg', 'logoKananImg', 'logoPreviewKiri', 'logoPreviewKanan'].forEach(function(id) {
     var el = document.getElementById(id);
@@ -750,10 +747,10 @@ function hapusLogo() {
 }
 function muatLogoDariStorage() {
   try {
-    var kiriB64 = localStorage.getItem('agendaBK_logoKiriB64_kelas7');
-    var kananB64 = localStorage.getItem('agendaBK_logoKananB64_kelas7');
-    var kiriUrl = localStorage.getItem('agendaBK_logoKiriUrl_kelas7');
-    var kananUrl = localStorage.getItem('agendaBK_logoKananUrl_kelas7');
+    var kiriB64 = localStorage.getItem('agendaBK_logoKiriB64_VII_Putri');
+    var kananB64 = localStorage.getItem('agendaBK_logoKananB64_VII_Putri');
+    var kiriUrl = localStorage.getItem('agendaBK_logoKiriUrl_VII_Putri');
+    var kananUrl = localStorage.getItem('agendaBK_logoKananUrl_VII_Putri');
     if (kiriB64) { setLogoKiriPreview(kiriB64); logoKiriBase64 = kiriB64; logoKiriUrl = kiriUrl || ''; }
     if (kananB64) { setLogoKananPreview(kananB64); logoKananBase64 = kananB64; logoKananUrl = kananUrl || ''; }
     updateLogoStatus();
@@ -761,8 +758,7 @@ function muatLogoDariStorage() {
 }
 
 /* ================================================================
-   GENERATE LAPORAN PDF — sinkron dulu, lalu minta backend membuat PDF
-   dari SELURUH Sheet Aktif (D1 + D2 + ... + Dn).
+   GENERATE LAPORAN PDF VII_Putri — dari SELURUH Sheet Aktif
    ================================================================ */
 async function generateLaporan() {
   if (!getBackendUrl()) { tampilkanNotif('⚠️ URL backend belum diatur', 'error'); return; }
@@ -778,11 +774,11 @@ async function generateLaporan() {
       window.open(res.pdfUrl, '_blank');
     } else {
       tampilkanNotif('❌ ' + (res && res.message ? res.message : 'Gagal membuat PDF'), 'error');
-      window.open(getBackendUrl() + '?page=laporan', '_blank');
+      window.open(getBackendUrl() + '?page=VII_Putri', '_blank');
     }
   } catch (err) {
     tampilkanNotif('⚠️ ' + err.message + ' — membuka halaman laporan manual', 'info');
-    window.open(getBackendUrl() + '?page=laporan', '_blank');
+    window.open(getBackendUrl() + '?page=VII_Putri', '_blank');
   }
 }
 
@@ -832,7 +828,7 @@ function hapusUrlKeterangan(grupIdx, barisIdx) {
   tampilkanNotif('🔗 URL keterangan dihapus', 'info');
 }
 
-/* ====== UPLOAD FOTO KETERANGAN: langsung ke folder Drive ====== */
+/* ====== UPLOAD FOTO KETERANGAN: langsung ke folder Drive VII_Putri ====== */
 function uploadFotoKeterangan(grupIdx, barisIdx, input) {
   var f = input.files && input.files[0];
   if (!f) return;
@@ -843,7 +839,6 @@ function uploadFotoKeterangan(grupIdx, barisIdx, input) {
   }
   kompresGambarJpeg(f, 640, 480, function(base64) {
     if (!dataTabel[grupIdx] || !dataTabel[grupIdx].baris[barisIdx]) return;
-    // Preview langsung pakai base64
     dataTabel[grupIdx].baris[barisIdx].keteranganGambar = base64;
     renderTabel();
     simpanLocal(true);
@@ -891,7 +886,7 @@ function lihatFotoKeterangan(grupIdx, barisIdx) {
 }
 
 function renderTabel() {
-  const tbody = document.getElementById('tbody-kelas7');
+  const tbody = document.getElementById('tbody-VII_Putri');
   tbody.innerHTML = '';
   if (!Array.isArray(dataTabel) || dataTabel.length === 0) {
     tbody.innerHTML = '<tr><td colspan="10"><div class="empty-state"><span class="icon">📭</span>Belum ada data agenda.<br><small>Data lama tetap aman di Sheet Aktif &amp; Riwayat.</small></div></td></tr>';
@@ -918,7 +913,7 @@ function renderTabel() {
         + bangunMediaKeterangan(grupIndex, barisIndex, baris)
         + '<div class="ket-tools">'
         + '<button class="btn-mini btn-mini-url" title="Isi / edit URL referensi" onclick="inputUrlKeterangan(' + grupIndex + ',' + barisIndex + ')">🔗 URL</button>'
-        + '<button class="btn-mini btn-mini-foto" title="Upload foto pendukung (masuk folder Drive)" onclick="document.getElementById(\'ketFile-' + grupIndex + '-' + barisIndex + '\').click()">📷 Foto</button>'
+        + '<button class="btn-mini btn-mini-foto" title="Upload foto pendukung (masuk folder Drive VII_Putri)" onclick="document.getElementById(\'ketFile-' + grupIndex + '-' + barisIndex + '\').click()">📷 Foto</button>'
         + '<input type="file" id="ketFile-' + grupIndex + '-' + barisIndex + '" accept="image/*" style="display:none" onchange="uploadFotoKeterangan(' + grupIndex + ',' + barisIndex + ', this)">'
         + '</div>'
         + '</td>';
@@ -1002,7 +997,6 @@ function tambahNoBaru() {
       keterangan: '—', keteranganUrl: '', keteranganGambar: ''
     }]
   });
-  // ===== ATURAN PERIODE: pengiriman berikutnya mengarsipkan batch terakhir ke Riwayat =====
   try { localStorage.setItem(PERIODE_KEY, '1'); } catch (e) {}
   renderTabel(); simpanLocal(true);
   tampilkanNotif('🔢 No. ' + noBaru + ' ditambahkan — kirim berikutnya: batch lama → Riwayat, data baru → Sheet Aktif', 'success');
@@ -1055,7 +1049,7 @@ function resetTabel() {
   try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
   try { sessionStorage.removeItem(STORAGE_KEY); } catch (e) {}
   try { localStorage.setItem(PERIODE_KEY, '1'); } catch (e) {}
-  setGrupTerkirim(0); // ===== dashboard kosong -> semua isian berikutnya adalah data baru =====
+  setGrupTerkirim(0);
   dataTabel = [];
   renderTabel();
   tampilkanNotif('🧹 Dashboard dibersihkan — Sheet Aktif & PDF tetap aman', 'info');
@@ -1086,7 +1080,7 @@ function eksporCSV() {
   const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
-  link.download = 'Agenda-Belajar-Kelas-VII.csv';
+  link.download = 'Agenda-Belajar-VII_Putri.csv';
   link.click();
   tampilkanNotif('⬇️ CSV diunduh', 'success');
 }
