@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agenda Belajar VII_Putri - Program Layanan BK</title>
+<title>Agenda Belajar IX_Sotya Palupi - Program Layanan BK</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); color: #1f2937; line-height: 1.6; padding: 20px; }
@@ -189,7 +189,7 @@ footer p { font-size:0.7em }
 💡 <strong>Petunjuk:</strong>
 <br>• Semua cell bisa diedit langsung, termasuk <strong>Kelas</strong> dan <strong>Hari, Tanggal</strong>.
 <br>• Kolom <strong>Keterangan</strong>: teks + referensi link (<strong>🔗 URL</strong>) + bukti foto (<strong>📷 Foto</strong>).
-<br>• <strong>Foto otomatis di-upload ke folder Drive “Keterangan VII_Putri”</strong> dan <strong>link-nya terekap di Spreadsheet</strong>, sehingga <strong>pasti muncul di laporan PDF</strong>.
+<br>• <strong>Foto otomatis di-upload ke folder Drive “Keterangan IX_Sotya Palupi”</strong> dan <strong>link-nya terekap di Spreadsheet</strong>, sehingga <strong>pasti muncul di laporan PDF</strong>.
 <br>• Gunakan <strong>➕</strong> di kolom Aksi untuk menambah baris dalam No. yang sama.
 <br>• <strong>Siklus periode:</strong> isi <strong>D1</strong> → <em>Kirim</em> → PDF berisi <strong>D1</strong>. Klik <strong>🔢 Tambah No. Baru</strong> (atau 🔄 Reset) → isi <strong>D2</strong> → <em>Kirim</em> → <strong>D1 diduplikasi ke Sheet Riwayat</strong>, PDF berisi <strong>D1+D2</strong>. Seterusnya: <strong>D3 → PDF D1+D2+D3</strong>, dst.
 <br>• <strong>Menghapus data di dashboard TIDAK menghapus data di Sheet Aktif</strong> — Sheet bersifat <em>append-only</em> dan PDF selalu membaca seluruh Sheet Aktif.
@@ -213,9 +213,9 @@ footer p { font-size:0.7em }
 </div>
 
 <div class="info-banner integrasi-banner">
-🔌 <strong>INTEGRASI GOOGLE — Spreadsheet &amp; Drive (VII_Putri)</strong>
+🔌 <strong>INTEGRASI GOOGLE — Spreadsheet &amp; Drive (IX_Sotya Palupi)</strong>
 <div class="integrasi-baris">
-<input type="text" id="backendUrl" placeholder="https://script.google.com/macros/s/AKfycbxVzHWe-lOHg3jVQ1N3wgzrtzLxgr-aMc8uvtCaD6BlQB2rGZqWIlxU3bQIxAmLTLu_/exec">
+<input type="text" id="backendUrl" placeholder="https://script.google.com/macros/s/AKfycbwOiHD2ygg1aoASC1UcrKbz0BOqhRydAh9O74e0-Ui3pxcV198ZjlDfIGnBCqJMsPgl/exec">
 <button class="btn btn-simpan" onclick="simpanBackendUrl()">💾 Simpan URL</button>
 <button class="btn btn-tes" onclick="tesKoneksi()">📡 Tes Koneksi</button>
 </div>
@@ -228,9 +228,9 @@ footer p { font-size:0.7em }
 </div>
 
 <section>
-<h2>📗 Agenda Layanan VII_Putri</h2>
+<h2>📗 Agenda Layanan IX_Sotya Palupi</h2>
 <div class="kelas-header">
-<h3>🟪 VII_Putri — Fase D Awal</h3>
+<h3>🟪 IX_Sotya Palupi — Fase D Awal</h3>
 <span>Fokus: Adaptasi &amp; Fondasi</span>
 </div>
 <div class="table-actions">
@@ -243,7 +243,7 @@ footer p { font-size:0.7em }
 <button class="btn btn-ekspor" onclick="eksporCSV()">⬇️ Ekspor CSV</button>
 </div>
 <div class="table-wrapper">
-<table id="tabel-VII_Putri">
+<table id="tabel-IX_Sotya Palupi">
 <thead>
 <tr>
 <th>No</th>
@@ -258,7 +258,7 @@ footer p { font-size:0.7em }
 <th class="col-aksi">Aksi</th>
 </tr>
 </thead>
-<tbody id="tbody-VII_Putri"></tbody>
+<tbody id="tbody-IX_Sotya Palupi"></tbody>
 </table>
 </div>
 </section>
@@ -311,7 +311,7 @@ footer p { font-size:0.7em }
 </div>
 
 <footer>
-<p>📘 <strong>Agenda Belajar VII_Putri — Program Layanan BK SMP</strong></p>
+<p>📘 <strong>Agenda Belajar IX_Sotya Palupi — Program Layanan BK SMP</strong></p>
 <p style="margin-top:6px; font-size:0.85em;">© 2026 — Data tersimpan otomatis di browser &amp; Google Spreadsheet (append-only).</p>
 </footer>
 </div>
@@ -320,12 +320,12 @@ footer p { font-size:0.7em }
 <button class="print-btn" onclick="window.print()">🖨️ Cetak / Simpan PDF</button>
 
 <script>
-const STORAGE_KEY = 'agendaBK_VII_Putri';
-const BACKEND_KEY = 'agendaBK_backendUrl_VII_Putri';
-const HEADER_STORAGE_KEY = 'agendaBK_headerData_VII_Putri';
-const TTD_INFO_STORAGE_KEY = 'agendaBK_ttdInfoData_VII_Putri';
-const PERIODE_KEY = 'agendaBK_periodeBaru_VII_Putri';
-const GRUP_TERKIRIM_KEY = 'agendaBK_grupTerkirim_VII_Putri'; // jumlah grup dashboard yang sudah masuk Sheet pada siklus berjalan
+const STORAGE_KEY = 'agendaBK_IX_Sotya Palupi';
+const BACKEND_KEY = 'agendaBK_backendUrl_IX_Sotya Palupi';
+const HEADER_STORAGE_KEY = 'agendaBK_headerData_IX_Sotya Palupi';
+const TTD_INFO_STORAGE_KEY = 'agendaBK_ttdInfoData_IX_Sotya Palupi';
+const PERIODE_KEY = 'agendaBK_periodeBaru_IX_Sotya Palupi';
+const GRUP_TERKIRIM_KEY = 'agendaBK_grupTerkirim_IX_Sotya Palupi'; // jumlah grup dashboard yang sudah masuk Sheet pada siklus berjalan
 
 const DEFAULT_BACKEND_URL = '';
 
@@ -487,7 +487,7 @@ async function tesKoneksi() {
     const res = await fetch(url);
     const info = await res.json();
     if (info.status === 'online') {
-      tampilkanNotif('✅ Terhubung ke backend VII_Putri!', 'success');
+      tampilkanNotif('✅ Terhubung ke backend IX_Sotya Palupi!', 'success');
       setBackendStatus('✅ Terhubung.', '#059669');
     } else {
       setBackendStatus('❌ Respons tidak dikenal', '#b91c1c');
@@ -526,13 +526,13 @@ async function pastikanSemuaFotoTerupload() {
   if (adaUpload) {
     simpanLocal(true);
     renderTabel();
-    tampilkanNotif('📷 Foto keterangan ter-upload ke folder Drive VII_Putri', 'success');
+    tampilkanNotif('📷 Foto keterangan ter-upload ke folder Drive IX_Sotya Palupi', 'success');
   }
   return adaUpload;
 }
 
 /* ================================================================
-   KIRIM KE SPREADSHEET (VII_Putri)
+   KIRIM KE SPREADSHEET (IX_Sotya Palupi)
    - periodeBaru = true  -> hanya DELTA (Dn) yang dikirim; backend
      menduplikasi batch terakhir ke Riwayat lalu append Dn.
    - periodeBaru = false -> kirim semua; backend append-only.
@@ -681,14 +681,14 @@ function uploadLogo(sisi, inp) {
           if (sisi === 'kiri') {
             logoKiriUrl = res.url;
             try {
-              localStorage.setItem('agendaBK_logoKiriUrl_VII_Putri', res.url);
-              localStorage.setItem('agendaBK_logoKiriB64_VII_Putri', b);
+              localStorage.setItem('agendaBK_logoKiriUrl_IX_Sotya Palupi', res.url);
+              localStorage.setItem('agendaBK_logoKiriB64_IX_Sotya Palupi', b);
             } catch (e) {}
           } else {
             logoKananUrl = res.url;
             try {
-              localStorage.setItem('agendaBK_logoKananUrl_VII_Putri', res.url);
-              localStorage.setItem('agendaBK_logoKananB64_VII_Putri', b);
+              localStorage.setItem('agendaBK_logoKananUrl_IX_Sotya Palupi', res.url);
+              localStorage.setItem('agendaBK_logoKananB64_IX_Sotya Palupi', b);
             } catch (e) {}
           }
           tampilkanNotif('🖼️ Logo ' + (sisi === 'kiri' ? 'Kiri' : 'Kanan') + ' ter-upload ke Drive', 'success');
@@ -729,10 +729,10 @@ function hapusLogo() {
   if (!confirm('Hapus semua logo dari dashboard? (File di Drive tidak ikut terhapus)')) return;
   logoKiriBase64 = ''; logoKananBase64 = ''; logoKiriUrl = ''; logoKananUrl = '';
   try {
-    localStorage.removeItem('agendaBK_logoKiriUrl_VII_Putri');
-    localStorage.removeItem('agendaBK_logoKiriB64_VII_Putri');
-    localStorage.removeItem('agendaBK_logoKananUrl_VII_Putri');
-    localStorage.removeItem('agendaBK_logoKananB64_VII_Putri');
+    localStorage.removeItem('agendaBK_logoKiriUrl_IX_Sotya Palupi');
+    localStorage.removeItem('agendaBK_logoKiriB64_IX_Sotya Palupi');
+    localStorage.removeItem('agendaBK_logoKananUrl_IX_Sotya Palupi');
+    localStorage.removeItem('agendaBK_logoKananB64_IX_Sotya Palupi');
   } catch (e) {}
   ['logoKiriImg', 'logoKananImg', 'logoPreviewKiri', 'logoPreviewKanan'].forEach(function(id) {
     var el = document.getElementById(id);
@@ -747,10 +747,10 @@ function hapusLogo() {
 }
 function muatLogoDariStorage() {
   try {
-    var kiriB64 = localStorage.getItem('agendaBK_logoKiriB64_VII_Putri');
-    var kananB64 = localStorage.getItem('agendaBK_logoKananB64_VII_Putri');
-    var kiriUrl = localStorage.getItem('agendaBK_logoKiriUrl_VII_Putri');
-    var kananUrl = localStorage.getItem('agendaBK_logoKananUrl_VII_Putri');
+    var kiriB64 = localStorage.getItem('agendaBK_logoKiriB64_IX_Sotya Palupi');
+    var kananB64 = localStorage.getItem('agendaBK_logoKananB64_IX_Sotya Palupi');
+    var kiriUrl = localStorage.getItem('agendaBK_logoKiriUrl_IX_Sotya Palupi');
+    var kananUrl = localStorage.getItem('agendaBK_logoKananUrl_IX_Sotya Palupi');
     if (kiriB64) { setLogoKiriPreview(kiriB64); logoKiriBase64 = kiriB64; logoKiriUrl = kiriUrl || ''; }
     if (kananB64) { setLogoKananPreview(kananB64); logoKananBase64 = kananB64; logoKananUrl = kananUrl || ''; }
     updateLogoStatus();
@@ -758,7 +758,7 @@ function muatLogoDariStorage() {
 }
 
 /* ================================================================
-   GENERATE LAPORAN PDF VII_Putri — dari SELURUH Sheet Aktif
+   GENERATE LAPORAN PDF IX_Sotya Palupi — dari SELURUH Sheet Aktif
    ================================================================ */
 async function generateLaporan() {
   if (!getBackendUrl()) { tampilkanNotif('⚠️ URL backend belum diatur', 'error'); return; }
@@ -774,11 +774,11 @@ async function generateLaporan() {
       window.open(res.pdfUrl, '_blank');
     } else {
       tampilkanNotif('❌ ' + (res && res.message ? res.message : 'Gagal membuat PDF'), 'error');
-      window.open(getBackendUrl() + '?page=VII_Putri', '_blank');
+      window.open(getBackendUrl() + '?page=IX_Sotya Palupi', '_blank');
     }
   } catch (err) {
     tampilkanNotif('⚠️ ' + err.message + ' — membuka halaman laporan manual', 'info');
-    window.open(getBackendUrl() + '?page=VII_Putri', '_blank');
+    window.open(getBackendUrl() + '?page=IX_Sotya Palupi', '_blank');
   }
 }
 
@@ -828,7 +828,7 @@ function hapusUrlKeterangan(grupIdx, barisIdx) {
   tampilkanNotif('🔗 URL keterangan dihapus', 'info');
 }
 
-/* ====== UPLOAD FOTO KETERANGAN: langsung ke folder Drive VII_Putri ====== */
+/* ====== UPLOAD FOTO KETERANGAN: langsung ke folder Drive IX_Sotya Palupi ====== */
 function uploadFotoKeterangan(grupIdx, barisIdx, input) {
   var f = input.files && input.files[0];
   if (!f) return;
@@ -886,7 +886,7 @@ function lihatFotoKeterangan(grupIdx, barisIdx) {
 }
 
 function renderTabel() {
-  const tbody = document.getElementById('tbody-VII_Putri');
+  const tbody = document.getElementById('tbody-IX_Sotya Palupi');
   tbody.innerHTML = '';
   if (!Array.isArray(dataTabel) || dataTabel.length === 0) {
     tbody.innerHTML = '<tr><td colspan="10"><div class="empty-state"><span class="icon">📭</span>Belum ada data agenda.<br><small>Data lama tetap aman di Sheet Aktif &amp; Riwayat.</small></div></td></tr>';
@@ -913,7 +913,7 @@ function renderTabel() {
         + bangunMediaKeterangan(grupIndex, barisIndex, baris)
         + '<div class="ket-tools">'
         + '<button class="btn-mini btn-mini-url" title="Isi / edit URL referensi" onclick="inputUrlKeterangan(' + grupIndex + ',' + barisIndex + ')">🔗 URL</button>'
-        + '<button class="btn-mini btn-mini-foto" title="Upload foto pendukung (masuk folder Drive VII_Putri)" onclick="document.getElementById(\'ketFile-' + grupIndex + '-' + barisIndex + '\').click()">📷 Foto</button>'
+        + '<button class="btn-mini btn-mini-foto" title="Upload foto pendukung (masuk folder Drive IX_Sotya Palupi)" onclick="document.getElementById(\'ketFile-' + grupIndex + '-' + barisIndex + '\').click()">📷 Foto</button>'
         + '<input type="file" id="ketFile-' + grupIndex + '-' + barisIndex + '" accept="image/*" style="display:none" onchange="uploadFotoKeterangan(' + grupIndex + ',' + barisIndex + ', this)">'
         + '</div>'
         + '</td>';
@@ -1080,7 +1080,7 @@ function eksporCSV() {
   const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
-  link.download = 'Agenda-Belajar-VII_Putri.csv';
+  link.download = 'Agenda-Belajar-IX_Sotya Palupi.csv';
   link.click();
   tampilkanNotif('⬇️ CSV diunduh', 'success');
 }
