@@ -66,11 +66,11 @@ td.cell-rowspan { background:#f8fafc !important; text-align:center; vertical-ali
 .btn-simpan { background:#0ea5e9; color:white } .btn-simpan:hover { background:#0284c7 }
 .btn-reset { background:#f59e0b; color:white } .btn-reset:hover { background:#d97706 }
 .btn-ekspor { background:#8b5cf6; color:white } .btn-ekspor:hover { background:#6d28d9 }
-.notif { position:fixed; top:20px; right:20px; background:#10b981; color:white; padding:14px 22px; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.15); font-weight:500; z-index:1000; transform:translateX(400px); transition:transform 0.4s ease }
+.notif { position:fVIIed; top:20px; right:20px; background:#10b981; color:white; padding:14px 22px; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.15); font-weight:500; z-index:1000; transform:translateX(400px); transition:transform 0.4s ease }
 .notif.show { transform:translateX(0) }
 .notif.error { background:#ef4444 }
 .notif.info { background:#0ea5e9 }
-.print-btn { position:fixed; bottom:25px; right:25px; background:#10b981; color:white; border:none; padding:12px 22px; border-radius:30px; font-size:0.95em; font-weight:600; cursor:pointer; box-shadow:0 4px 15px rgba(16,185,129,0.4); transition:all 0.3s; z-index:100 }
+.print-btn { position:fVIIed; bottom:25px; right:25px; background:#10b981; color:white; border:none; padding:12px 22px; border-radius:30px; font-size:0.95em; font-weight:600; cursor:pointer; box-shadow:0 4px 15px rgba(16,185,129,0.4); transition:all 0.3s; z-index:100 }
 .print-btn:hover { background:#059669; transform:scale(1.05) }
 footer { background:#4c1d95; color:#cbd5e1; padding:25px 30px; text-align:center; font-size:0.9em }
 footer strong { color:white }
@@ -110,7 +110,7 @@ td.keterangan-cell { min-width:210px; }
 .btn-mini-url { background:#dbeafe; color:#1d4ed8; } .btn-mini-url:hover { background:#bfdbfe; }
 .btn-mini-foto { background:#fce7f3; color:#be185d; } .btn-mini-foto:hover { background:#fbcfe8; }
 .btn-mini-hapus { background:#fee2e2; color:#b91c1c; padding:3px 6px; } .btn-mini-hapus:hover { background:#fecaca; }
-.ket-lightbox { position:fixed; inset:0; background:rgba(15,23,42,0.8); display:flex; align-items:center; justify-content:center; z-index:2000; cursor:zoom-out; }
+.ket-lightbox { position:fVIIed; inset:0; background:rgba(15,23,42,0.8); display:flex; align-items:center; justify-content:center; z-index:2000; cursor:zoom-out; }
 .ket-lightbox img { max-width:92vw; max-height:92vh; border-radius:8px; box-shadow:0 10px 40px rgba(0,0,0,0.5); background:#fff; }
 @media (max-width:640px) {
 .judul-dokumen h3 { font-size:14px }
@@ -181,12 +181,12 @@ footer p { font-size:0.7em }
 <div class="placeholder-logo" id="logoKananPlaceholder">Logo<br>Kanan</div>
 </div>
 </div>
-<div class="judul-dokumen"><h3>AGENDA BELAJAR IX_RIZQI PUTRI SHOLIHATIN</h3></div>
+<div class="judul-dokumen"><h3>AGENDA BELAJAR VII_RIZQI PUTRI SHOLIHATIN</h3></div>
 <div class="info-banner">
 💡 <strong>Petunjuk:</strong>
 <br>• Semua cell bisa diedit langsung, termasuk <strong>Kelas</strong> dan <strong>Hari, Tanggal</strong>.
 <br>• Kolom <strong>Keterangan</strong>: teks + referensi link (<strong>🔗 URL</strong>) + bukti foto (<strong>📷 Foto</strong>).
-<br>• <strong>Foto otomatis di-upload ke folder Drive "Keterangan Sotya_Palupi_GBK_IX"</strong> dan <strong>link-nya terekap di Spreadsheet</strong>, sehingga <strong>pasti muncul di laporan PDF</strong>.
+<br>• <strong>Foto otomatis di-upload ke folder Drive "Keterangan Sotya_Palupi_GBK_VII"</strong> dan <strong>link-nya terekap di Spreadsheet</strong>, sehingga <strong>pasti muncul di laporan PDF</strong>.
 <br>• Gunakan <strong>➕</strong> di kolom Aksi untuk menambah baris dalam No. yang sama.
 <br>• <strong>Siklus periode:</strong> isi <strong>D1</strong> → <em>Kirim</em> → PDF berisi <strong>D1</strong>. Klik <strong>🔢 Tambah No. Baru</strong> (atau 🔄 Reset) → isi <strong>D2</strong> → <em>Kirim</em> → <strong>D1 diduplikasi ke Sheet Riwayat</strong>, PDF berisi <strong>D1+D2</strong>. Seterusnya: <strong>D3 → PDF D1+D2+D3</strong>, dst.
 <br>• <strong>Menghapus data di dashboard TIDAK menghapus data di Sheet Aktif</strong> — Sheet bersifat <em>append-only</em> dan PDF selalu membaca seluruh Sheet Aktif.
@@ -309,7 +309,7 @@ Memuat URL backend...
 </div>
 </div>
 <footer>
-<p>📘 <strong>Agenda Belajar IX — Program Layanan BK SMP (Sotya Palupi)</strong></p>
+<p>📘 <strong>Agenda Belajar VII — Program Layanan BK SMP (Sotya Palupi)</strong></p>
 <p style="margin-top:6px; font-size:0.85em;">© 2026 — Data tersimpan otomatis di browser &amp; Google Spreadsheet (append-only).</p>
 </footer>
 </div>
@@ -321,7 +321,7 @@ Memuat URL backend...
    Ganti URL di bawah ini dengan URL deployment Web App Anda
    setelah deploy backend (Kode.gs) sebagai Web App.
    ================================================================ */
-const DEFAULT_BACKEND_URL = 'https://script.google.com/macros/s/AKfycbxVzHWe-lOHg3jVQ1N3wgzrtzLxgr-aMc8uvtCaD6BlQB2rGZqWIlxU3bQIxAmLTLu_/exec';
+const DEFAULT_BACKEND_URL = 'https://script.google.com/macros/s/AKfycbxVzHWe-lOHg3jVQ1N3wgzrtzLxgr-aMc8uvtCaD6BlQB2rGZqWIlxU3bQVIIAmLTLu_/exec';
 
 const STORAGE_KEY = 'agendaBK_VII_Putri';
 const BACKEND_KEY = 'agendaBK_backendUrl_VII_Putri';
@@ -477,7 +477,7 @@ try {
 const res = await fetch(url);
 const info = await res.json();
 if (info.status === 'online') {
-tampilkanNotif('✅ Terhubung ke backend Sotya_Palupi_GBK_IX!', 'success');
+tampilkanNotif('✅ Terhubung ke backend Sotya_Palupi_GBK_VII!', 'success');
 setBackendStatus('✅ Terhubung — Versi: ' + (info.versi || '-') + ' | Server: ' + (info.waktuServer || '-'), '#059669');
 } else {
 setBackendStatus('❌ Respons tidak dikenal', '#b91c1c');
@@ -511,7 +511,7 @@ console.error('Gagal upload foto keterangan:', e);
 if (adaUpload) {
 simpanLocal(true);
 renderTabel();
-tampilkanNotif('📷 Foto keterangan ter-upload ke folder Drive Sotya_Palupi_GBK_IX', 'success');
+tampilkanNotif('📷 Foto keterangan ter-upload ke folder Drive Sotya_Palupi_GBK_VII', 'success');
 }
 return adaUpload;
 }
@@ -740,11 +740,11 @@ setBackendStatus('📄 PDF diperbarui — ' + res.totalBaris + ' baris aktif', '
 window.open(res.pdfUrl, '_blank');
 } else {
 tampilkanNotif('❌ ' + (res && res.message ? res.message : 'Gagal membuat PDF'), 'error');
-window.open(getBackendUrl() + '?page=Sotya Palupi-GBK IX', '_blank');
+window.open(getBackendUrl() + '?page=Sotya Palupi-GBK VII', '_blank');
 }
 } catch (err) {
 tampilkanNotif('⚠️ ' + err.message + ' — membuka halaman laporan manual', 'info');
-window.open(getBackendUrl() + '?page=Sotya Palupi-GBK IX', '_blank');
+window.open(getBackendUrl() + '?page=Sotya Palupi-GBK VII', '_blank');
 }
 }
 function bangunMediaKeterangan(g, b, baris) {
@@ -874,7 +874,7 @@ isi += '<td class="keterangan-cell">'
 + bangunMediaKeterangan(grupIndex, barisIndex, baris)
 + '<div class="ket-tools">'
 + '<button class="btn-mini btn-mini-url" title="Isi / edit URL referensi" onclick="inputUrlKeterangan(' + grupIndex + ',' + barisIndex + ')">🔗 URL</button>'
-+ '<button class="btn-mini btn-mini-foto" title="Upload foto pendukung (masuk folder Drive Sotya_Palupi_GBK_IX)" onclick="document.getElementById(\'ketFile-' + grupIndex + '-' + barisIndex + '\').click()">📷 Foto</button>'
++ '<button class="btn-mini btn-mini-foto" title="Upload foto pendukung (masuk folder Drive Sotya_Palupi_GBK_VII)" onclick="document.getElementById(\'ketFile-' + grupIndex + '-' + barisIndex + '\').click()">📷 Foto</button>'
 + '<input type="file" id="ketFile-' + grupIndex + '-' + barisIndex + '" accept="image/*" style="display:none" onchange="uploadFotoKeterangan(' + grupIndex + ',' + barisIndex + ', this)">'
 + '</div>'
 + '</td>';
