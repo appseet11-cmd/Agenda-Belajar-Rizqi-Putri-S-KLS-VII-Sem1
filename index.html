@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agenda Belajar VII_Putri - Program Layanan BK</title>
+<title>Agenda Belajar VIII_Rizqi Putri Sholihatin - Program Layanan BK</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); color: #1f2937; line-height: 1.6; padding: 20px; }
@@ -66,11 +66,11 @@ td.cell-rowspan { background:#f8fafc !important; text-align:center; vertical-ali
 .btn-simpan { background:#0ea5e9; color:white } .btn-simpan:hover { background:#0284c7 }
 .btn-reset { background:#f59e0b; color:white } .btn-reset:hover { background:#d97706 }
 .btn-ekspor { background:#8b5cf6; color:white } .btn-ekspor:hover { background:#6d28d9 }
-.notif { position:fVIIed; top:20px; right:20px; background:#10b981; color:white; padding:14px 22px; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.15); font-weight:500; z-index:1000; transform:translateX(400px); transition:transform 0.4s ease }
+.notif { position:fixed; top:20px; right:20px; background:#10b981; color:white; padding:14px 22px; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.15); font-weight:500; z-index:1000; transform:translateX(400px); transition:transform 0.4s ease }
 .notif.show { transform:translateX(0) }
 .notif.error { background:#ef4444 }
 .notif.info { background:#0ea5e9 }
-.print-btn { position:fVIIed; bottom:25px; right:25px; background:#10b981; color:white; border:none; padding:12px 22px; border-radius:30px; font-size:0.95em; font-weight:600; cursor:pointer; box-shadow:0 4px 15px rgba(16,185,129,0.4); transition:all 0.3s; z-index:100 }
+.print-btn { position:fixed; bottom:25px; right:25px; background:#10b981; color:white; border:none; padding:12px 22px; border-radius:30px; font-size:0.95em; font-weight:600; cursor:pointer; box-shadow:0 4px 15px rgba(16,185,129,0.4); transition:all 0.3s; z-index:100 }
 .print-btn:hover { background:#059669; transform:scale(1.05) }
 footer { background:#4c1d95; color:#cbd5e1; padding:25px 30px; text-align:center; font-size:0.9em }
 footer strong { color:white }
@@ -110,7 +110,7 @@ td.keterangan-cell { min-width:210px; }
 .btn-mini-url { background:#dbeafe; color:#1d4ed8; } .btn-mini-url:hover { background:#bfdbfe; }
 .btn-mini-foto { background:#fce7f3; color:#be185d; } .btn-mini-foto:hover { background:#fbcfe8; }
 .btn-mini-hapus { background:#fee2e2; color:#b91c1c; padding:3px 6px; } .btn-mini-hapus:hover { background:#fecaca; }
-.ket-lightbox { position:fVIIed; inset:0; background:rgba(15,23,42,0.8); display:flex; align-items:center; justify-content:center; z-index:2000; cursor:zoom-out; }
+.ket-lightbox { position:fixed; inset:0; background:rgba(15,23,42,0.8); display:flex; align-items:center; justify-content:center; z-index:2000; cursor:zoom-out; }
 .ket-lightbox img { max-width:92vw; max-height:92vh; border-radius:8px; box-shadow:0 10px 40px rgba(0,0,0,0.5); background:#fff; }
 @media (max-width:640px) {
 .judul-dokumen h3 { font-size:14px }
@@ -181,12 +181,12 @@ footer p { font-size:0.7em }
 <div class="placeholder-logo" id="logoKananPlaceholder">Logo<br>Kanan</div>
 </div>
 </div>
-<div class="judul-dokumen"><h3>AGENDA BELAJAR VII_RIZQI PUTRI SHOLIHATIN</h3></div>
+<div class="judul-dokumen"><h3>AGENDA BELAJAR VII_Rizqi Putri Sholihatin</h3></div>
 <div class="info-banner">
 💡 <strong>Petunjuk:</strong>
 <br>• Semua cell bisa diedit langsung, termasuk <strong>Kelas</strong> dan <strong>Hari, Tanggal</strong>.
 <br>• Kolom <strong>Keterangan</strong>: teks + referensi link (<strong>🔗 URL</strong>) + bukti foto (<strong>📷 Foto</strong>).
-<br>• <strong>Foto otomatis di-upload ke folder Drive "Keterangan Sotya_Palupi_GBK_VII"</strong> dan <strong>link-nya terekap di Spreadsheet</strong>, sehingga <strong>pasti muncul di laporan PDF</strong>.
+<br>• <strong>Foto otomatis di-upload ke folder Drive "Keterangan Rizqi Putri Sholihatin_GBK_VII"</strong> dan <strong>link-nya terekap di Spreadsheet</strong>, sehingga <strong>pasti muncul di laporan PDF</strong>.
 <br>• Gunakan <strong>➕</strong> di kolom Aksi untuk menambah baris dalam No. yang sama.
 <br>• <strong>Siklus periode:</strong> isi <strong>D1</strong> → <em>Kirim</em> → PDF berisi <strong>D1</strong>. Klik <strong>🔢 Tambah No. Baru</strong> (atau 🔄 Reset) → isi <strong>D2</strong> → <em>Kirim</em> → <strong>D1 diduplikasi ke Sheet Riwayat</strong>, PDF berisi <strong>D1+D2</strong>. Seterusnya: <strong>D3 → PDF D1+D2+D3</strong>, dst.
 <br>• <strong>Menghapus data di dashboard TIDAK menghapus data di Sheet Aktif</strong> — Sheet bersifat <em>append-only</em> dan PDF selalu membaca seluruh Sheet Aktif.
@@ -211,7 +211,7 @@ footer p { font-size:0.7em }
 <!-- BANNER INTEGRASI BACKEND — URL SUDAH DITANAM (HARDCODED)     -->
 <!-- ============================================================ -->
 <div class="info-banner integrasi-banner">
-🔌 <strong>INTEGRASI GOOGLE — Spreadsheet &amp; Drive (Rizqi_Putri_Sholihatin_GBK_VII)</strong>
+🔌 <strong>INTEGRASI GOOGLE — Spreadsheet &amp; Drive (Rizqi Putri Sholihatin_GBK_VII)</strong>
 <div style="margin-top:8px; font-size:0.85em; color:#1e293b;">
 📌 <strong>URL Apps Script sudah ditanam otomatis.</strong> Tidak perlu mengisi URL manual.
 </div>
@@ -229,9 +229,9 @@ Memuat URL backend...
 <div id="backendStatus" class="backend-status">Status: belum terhubung ke backend.</div>
 </div>
 <section>
-<h2>📗 Agenda Layanan Rizqi_Putri_Sholihatin_GBK_VII</h2>
+<h2>📗 Agenda Layanan Rizqi Putri Sholihatin_GBK_VII</h2>
 <div class="kelas-header">
-<h3>🟪 Kelas VII — Fase D Awal</h3>
+<h3>🟪 Kelas VIII — Fase D Awal</h3>
 <span>Fokus: Adaptasi &amp; Fondasi</span>
 </div>
 <div class="table-actions">
@@ -244,7 +244,7 @@ Memuat URL backend...
 <button class="btn btn-ekspor" onclick="eksporCSV()">⬇️ Ekspor CSV</button>
 </div>
 <div class="table-wrapper">
-<table id="tabel-VII_Putri">
+<table id="tabel-VIII_Rizqi Putri Sholihatin">
 <thead>
 <tr>
 <th>No</th>
@@ -259,7 +259,7 @@ Memuat URL backend...
 <th class="col-aksi">Aksi</th>
 </tr>
 </thead>
-<tbody id="tbody-VII_Putri"></tbody>
+<tbody id="tbody-VIII_Rizqi Putri Sholihatin"></tbody>
 </table>
 </div>
 </section>
@@ -309,7 +309,7 @@ Memuat URL backend...
 </div>
 </div>
 <footer>
-<p>📘 <strong>Agenda Belajar VII — Program Layanan BK SMP (Rizqi Putri Sholihatin)</strong></p>
+<p>📘 <strong>Agenda Belajar VIII — Program Layanan BK SMP (Rizqi Putri Sholihatin)</strong></p>
 <p style="margin-top:6px; font-size:0.85em;">© 2026 — Data tersimpan otomatis di browser &amp; Google Spreadsheet (append-only).</p>
 </footer>
 </div>
@@ -321,14 +321,14 @@ Memuat URL backend...
    Ganti URL di bawah ini dengan URL deployment Web App Anda
    setelah deploy backend (Kode.gs) sebagai Web App.
    ================================================================ */
-const DEFAULT_BACKEND_URL = 'https://script.google.com/macros/s/AKfycbxVzHWe-lOHg3jVQ1N3wgzrtzLxgr-aMc8uvtCaD6BlQB2rGZqWIlxU3bQVIIAmLTLu_/exec';
+const DEFAULT_BACKEND_URL = 'https://script.google.com/macros/s/AKfycbxVzHWe-lOHg3jVQ1N3wgzrtzLxgr-aMc8uvtCaD6BlQB2rGZqWIlxU3bQIxAmLTLu_/exec';
 
-const STORAGE_KEY = 'agendaBK_VII_Putri';
-const BACKEND_KEY = 'agendaBK_backendUrl_VII_Putri';
-const HEADER_STORAGE_KEY = 'agendaBK_headerData_VII_Putri';
-const TTD_INFO_STORAGE_KEY = 'agendaBK_ttdInfoData_VII_Putri';
-const PERIODE_KEY = 'agendaBK_periodeBaru_VII_Putri';
-const GRUP_TERKIRIM_KEY = 'agendaBK_grupTerkirim_VII_Putri';
+const STORAGE_KEY = 'agendaBK_VII_Rizqi Putri Sholihatin';
+const BACKEND_KEY = 'agendaBK_backendUrl_VII_Rizqi Putri Sholihatin';
+const HEADER_STORAGE_KEY = 'agendaBK_headerData_VII_Rizqi Putri Sholihatin';
+const TTD_INFO_STORAGE_KEY = 'agendaBK_ttdInfoData_VII_Rizqi Putri Sholihatin';
+const PERIODE_KEY = 'agendaBK_periodeBaru_VII_Rizqi Putri Sholihatin';
+const GRUP_TERKIRIM_KEY = 'agendaBK_grupTerkirim_VII_Rizqi Putri Sholihatin';
 
 var imgKepsekBase64 = '';
 var imgGuruBase64 = '';
@@ -477,7 +477,7 @@ try {
 const res = await fetch(url);
 const info = await res.json();
 if (info.status === 'online') {
-tampilkanNotif('✅ Terhubung ke backend Sotya_Palupi_GBK_VII!', 'success');
+tampilkanNotif('✅ Terhubung ke backend Rizqi Putri Sholihatin_GBK_VII', 'success');
 setBackendStatus('✅ Terhubung — Versi: ' + (info.versi || '-') + ' | Server: ' + (info.waktuServer || '-'), '#059669');
 } else {
 setBackendStatus('❌ Respons tidak dikenal', '#b91c1c');
@@ -511,7 +511,7 @@ console.error('Gagal upload foto keterangan:', e);
 if (adaUpload) {
 simpanLocal(true);
 renderTabel();
-tampilkanNotif('📷 Foto keterangan ter-upload ke folder Drive Sotya_Palupi_GBK_VII', 'success');
+tampilkanNotif('📷 Foto keterangan ter-upload ke folder Drive Rizqi Putri SholihatinS_GBK_VII', 'success');
 }
 return adaUpload;
 }
@@ -651,14 +651,14 @@ if (res && res.ok) {
 if (sisi === 'kiri') {
 logoKiriUrl = res.url;
 try {
-localStorage.setItem('agendaBK_logoKiriUrl_VII_Putri', res.url);
-localStorage.setItem('agendaBK_logoKiriB64_VII_Putri', b);
+localStorage.setItem('agendaBK_logoKiriUrl_VII_Rizqi Putri Sholihatin', res.url);
+localStorage.setItem('agendaBK_logoKiriB64_VII_Rizqi Putri Sholihatin', b);
 } catch (e) {}
 } else {
 logoKananUrl = res.url;
 try {
-localStorage.setItem('agendaBK_logoKananUrl_VII_Putri', res.url);
-localStorage.setItem('agendaBK_logoKananB64_VII_Putri', b);
+localStorage.setItem('agendaBK_logoKananUrl_VII_Rizqi Putri Sholihatin', res.url);
+localStorage.setItem('agendaBK_logoKananB64_VII_Rizqi Putri Sholihatin', b);
 } catch (e) {}
 }
 tampilkanNotif('🖼️ Logo ' + (sisi === 'kiri' ? 'Kiri' : 'Kanan') + ' ter-upload ke Drive', 'success');
@@ -699,10 +699,10 @@ function hapusLogo() {
 if (!confirm('Hapus semua logo dari dashboard? (File di Drive tidak ikut terhapus)')) return;
 logoKiriBase64 = ''; logoKananBase64 = ''; logoKiriUrl = ''; logoKananUrl = '';
 try {
-localStorage.removeItem('agendaBK_logoKiriUrl_VII_Putri');
-localStorage.removeItem('agendaBK_logoKiriB64_VII_Putri');
-localStorage.removeItem('agendaBK_logoKananUrl_VII_Putri');
-localStorage.removeItem('agendaBK_logoKananB64_VII_Putri');
+localStorage.removeItem('agendaBK_logoKiriUrl_VII_Rizqi Putri Sholihatin');
+localStorage.removeItem('agendaBK_logoKiriB64_VII_Rizqi Putri Sholihatin');
+localStorage.removeItem('agendaBK_logoKananUrl_VII_Rizqi Putri Sholihatin');
+localStorage.removeItem('agendaBK_logoKananB64_VII_Rizqi Putri Sholihatin');
 } catch (e) {}
 ['logoKiriImg', 'logoKananImg', 'logoPreviewKiri', 'logoPreviewKanan'].forEach(function(id) {
 var el = document.getElementById(id);
@@ -717,10 +717,10 @@ tampilkanNotif('🗑️ Semua logo dihapus dari dashboard', 'info');
 }
 function muatLogoDariStorage() {
 try {
-var kiriB64 = localStorage.getItem('agendaBK_logoKiriB64_VII_Putri');
-var kananB64 = localStorage.getItem('agendaBK_logoKananB64_VII_Putri');
-var kiriUrl = localStorage.getItem('agendaBK_logoKiriUrl_VII_Putri');
-var kananUrl = localStorage.getItem('agendaBK_logoKananUrl_VII_Putri');
+var kiriB64 = localStorage.getItem('agendaBK_logoKiriB64_VII_Rizqi Putri Sholihatin');
+var kananB64 = localStorage.getItem('agendaBK_logoKananB64_VII_Rizqi Putri Sholihatin');
+var kiriUrl = localStorage.getItem('agendaBK_logoKiriUrl_VII_Rizqi Putri Sholihatin');
+var kananUrl = localStorage.getItem('agendaBK_logoKananUrl_VII_Rizqi Putri Sholihatin');
 if (kiriB64) { setLogoKiriPreview(kiriB64); logoKiriBase64 = kiriB64; logoKiriUrl = kiriUrl || ''; }
 if (kananB64) { setLogoKananPreview(kananB64); logoKananBase64 = kananB64; logoKananUrl = kananUrl || ''; }
 updateLogoStatus();
@@ -740,11 +740,11 @@ setBackendStatus('📄 PDF diperbarui — ' + res.totalBaris + ' baris aktif', '
 window.open(res.pdfUrl, '_blank');
 } else {
 tampilkanNotif('❌ ' + (res && res.message ? res.message : 'Gagal membuat PDF'), 'error');
-window.open(getBackendUrl() + '?page=Rizqi Putri Sholihatin-GBK VII', '_blank');
+window.open(getBackendUrl() + '?page=Rizqi Putri Sholihatin-GBK VIII', '_blank');
 }
 } catch (err) {
 tampilkanNotif('⚠️ ' + err.message + ' — membuka halaman laporan manual', 'info');
-window.open(getBackendUrl() + '?page=Rizqi Putri Sholihatin-GBK VII', '_blank');
+window.open(getBackendUrl() + '?page=Rizqi Putri Sholihatin-GBK VIII', '_blank');
 }
 }
 function bangunMediaKeterangan(g, b, baris) {
@@ -847,7 +847,7 @@ if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
 document.body.appendChild(overlay);
 }
 function renderTabel() {
-const tbody = document.getElementById('tbody-VII_Putri');
+const tbody = document.getElementById('tbody-VIII_Rizqi Putri Sholihatin');
 tbody.innerHTML = '';
 if (!Array.isArray(dataTabel) || dataTabel.length === 0) {
 tbody.innerHTML = '<tr><td colspan="10"><div class="empty-state"><span class="icon">📭</span>Belum ada data agenda.<br><small>Data lama tetap aman di Sheet Aktif &amp; Riwayat.</small></div></td></tr>';
@@ -874,7 +874,7 @@ isi += '<td class="keterangan-cell">'
 + bangunMediaKeterangan(grupIndex, barisIndex, baris)
 + '<div class="ket-tools">'
 + '<button class="btn-mini btn-mini-url" title="Isi / edit URL referensi" onclick="inputUrlKeterangan(' + grupIndex + ',' + barisIndex + ')">🔗 URL</button>'
-+ '<button class="btn-mini btn-mini-foto" title="Upload foto pendukung (masuk folder Drive Sotya_Palupi_GBK_VII)" onclick="document.getElementById(\'ketFile-' + grupIndex + '-' + barisIndex + '\').click()">📷 Foto</button>'
++ '<button class="btn-mini btn-mini-foto" title="Upload foto pendukung (masuk folder Drive Rizqi Putri Sholihatin_GBK_VII)" onclick="document.getElementById(\'ketFile-' + grupIndex + '-' + barisIndex + '\').click()">📷 Foto</button>'
 + '<input type="file" id="ketFile-' + grupIndex + '-' + barisIndex + '" accept="image/*" style="display:none" onchange="uploadFotoKeterangan(' + grupIndex + ',' + barisIndex + ', this)">'
 + '</div>'
 + '</td>';
@@ -1039,7 +1039,7 @@ csv += '"' + csvEsc(no) + '","'
 const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
 const link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
-link.download = 'Agenda-Belajar-VII_Putri.csv';
+link.download = 'Agenda-Belajar-VIII_Rizqi Putri Sholihatin.csv';
 link.click();
 tampilkanNotif('⬇️ CSV diunduh', 'success');
 }
